@@ -13,6 +13,9 @@
 		CC0B30512285260600303324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0B30502285260600303324 /* Assets.xcassets */; };
 		CC0B30542285260600303324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0B30522285260600303324 /* LaunchScreen.storyboard */; };
 		CC0B30572285260600303324 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B30562285260600303324 /* main.m */; };
+		CC0B305F2285511B00303324 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B305E2285511B00303324 /* SubViewController.m */; };
+		CC0B30652285639F00303324 /* TCGroupHomeGestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B30642285639F00303324 /* TCGroupHomeGestureHandler.m */; };
+		CC0B30682285660F00303324 /* TCGroupHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0B30672285660E00303324 /* TCGroupHomeTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		CC0B30532285260600303324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC0B30552285260600303324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC0B30562285260600303324 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC0B305D2285511B00303324 /* SubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		CC0B305E2285511B00303324 /* SubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		CC0B30632285639F00303324 /* TCGroupHomeGestureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGroupHomeGestureHandler.h; sourceTree = "<group>"; };
+		CC0B30642285639F00303324 /* TCGroupHomeGestureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGroupHomeGestureHandler.m; sourceTree = "<group>"; };
+		CC0B30662285660E00303324 /* TCGroupHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGroupHomeTableView.h; sourceTree = "<group>"; };
+		CC0B30672285660E00303324 /* TCGroupHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGroupHomeTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				CC0B30482285260400303324 /* AppDelegate.m */,
 				CC0B304A2285260400303324 /* ViewController.h */,
 				CC0B304B2285260400303324 /* ViewController.m */,
+				CC0B305D2285511B00303324 /* SubViewController.h */,
+				CC0B305E2285511B00303324 /* SubViewController.m */,
+				CC0B30662285660E00303324 /* TCGroupHomeTableView.h */,
+				CC0B30672285660E00303324 /* TCGroupHomeTableView.m */,
+				CC0B30632285639F00303324 /* TCGroupHomeGestureHandler.h */,
+				CC0B30642285639F00303324 /* TCGroupHomeGestureHandler.m */,
 				CC0B304D2285260400303324 /* Main.storyboard */,
 				CC0B30502285260600303324 /* Assets.xcassets */,
 				CC0B30522285260600303324 /* LaunchScreen.storyboard */,
@@ -141,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0B30652285639F00303324 /* TCGroupHomeGestureHandler.m in Sources */,
 				CC0B304C2285260400303324 /* ViewController.m in Sources */,
 				CC0B30572285260600303324 /* main.m in Sources */,
+				CC0B30682285660F00303324 /* TCGroupHomeTableView.m in Sources */,
 				CC0B30492285260400303324 /* AppDelegate.m in Sources */,
+				CC0B305F2285511B00303324 /* SubViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +304,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8D56QC4763;
+				DEVELOPMENT_TEAM = Y6Q4Y8S5HU;
 				INFOPLIST_FILE = Demo919/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cheyuxin.Demo919;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheyuxin.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,13 +321,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8D56QC4763;
+				DEVELOPMENT_TEAM = Y6Q4Y8S5HU;
 				INFOPLIST_FILE = Demo919/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cheyuxin.Demo919;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cheyuxin.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
