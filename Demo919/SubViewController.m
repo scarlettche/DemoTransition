@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -36,12 +35,9 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    self.gestureHandler.subContentOffset = scrollView.contentOffset;
-    
-    if (scrollView.contentOffset.y < 0) {
+    if (scrollView.contentOffset.y < 0 || self.gestureHandler.containerTopConstant > 0) {
         scrollView.contentOffset = CGPointMake(0, 0);
     }
-    
-    self.gestureHandler.subContentOffset = scrollView.contentOffset;
+        self.gestureHandler.subContentOffset = scrollView.contentOffset;
 }
 @end

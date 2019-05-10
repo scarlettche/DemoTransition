@@ -11,7 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, SubViewControllerType) {
+    SubViewControllerTypeFollow,
+    SubViewControllerTypeIndependent
+};
 @interface SubViewController : UIViewController
+@property (nonatomic, assign) SubViewControllerType type;
+
 @property (nonatomic, strong) TCGroupHomeGestureHandler *gestureHandler;
 
 @end

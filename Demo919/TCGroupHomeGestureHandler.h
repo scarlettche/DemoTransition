@@ -9,14 +9,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSInteger, HotGestureAreaType) {
-    HotGestureAreaTypeSuper,
-    HotGestureAreaTypeContent
-};
-
-#define kTopHeaderViewHeight (90.0f)
 
 @interface TCGroupHomeGestureHandler : NSObject
+@property (nonatomic, assign) CGFloat containerTopConstant;
 
 @property (nonatomic, assign) CGPoint superContentOffset;
 @property (nonatomic, assign) CGPoint subContentOffset;

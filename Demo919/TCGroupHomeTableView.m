@@ -14,6 +14,8 @@
 @implementation TCGroupHomeTableView
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    NSInteger tag = gestureRecognizer.view.tag;
+    NSInteger otherTag = otherGestureRecognizer.view.tag;
     return YES;
 }
 //
